@@ -51,7 +51,8 @@ public void test(String name, Integer age) {
 在使用本库的时候，很麻烦的一个问题就是在字符串中输入参数时，IDEA不会进行自动提示，因此可以采用
 我编写的一个基于`#`开头的字符串的参数自动提示，弥补idea的不足，提高使用体验。
 <br>
-由于插件还没有上传Idea插件库中，因此将安装包放在了release发布版本的资源中了
+由于插件还没有上传Idea插件库中，因此将安装包放在了release发布版本的资源中了，对应插件的仓库地址为：
+[Simple-SPEL-Plugin](https://github.com/cx2002/auto-s.git)
 <br>
 本库使用的Spring版本为`5.2.3`
 
