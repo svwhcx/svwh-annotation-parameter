@@ -4,6 +4,25 @@
 在SpringBoot的开发中，`@Valid`注解适用于需要验证全部参数的情况，但很多使用一个实体是不需要验证全部参数的，
 只需要验证部分参数，这时候分组就太麻，本库提供了基于注解的参数验证的方式验证方法的参数是否合法
 不必和业务耦合,也不需要定义分组。基本的`@NotNull`的用法如下：
+1. 先引入pom依赖
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.cx2002</groupId>
+        <artifactId>svwh-annotation-parameter</artifactId>
+        <version>0.0.1</version>
+    </dependency>
+</dependencies>
+
+```
+
 ```java
 
 @NotNull(key = {"#name"},tipMessage="变量名称不可为null")
